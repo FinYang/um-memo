@@ -24,8 +24,8 @@
   font: "libertinus serif",
   fontsize: 11pt,
   linestretch: 1.3,
-  title-size: 1.5em,
-  subtitle-size: 1.25em,
+  title-size: 1.6em,
+  subtitle-size: 1.1em,
   heading-family: "Fira Sans",
   heading-weight: "bold",
   heading-style: "normal",
@@ -121,25 +121,25 @@
             fill: if branding { white } else { black },
           )[#title]
           #if subtitle != none {
-            v(4pt)
+            linebreak()
             text(
               font: heading-family,
               size: subtitle-size,
-              weight: "normal",
+              weight: heading-weight,
               fill: if branding { white } else { black },
             )[#subtitle]
           }
         ]
 
         grid(columns: (0.6fr, 0.4fr), rows: auto, align: (left, right), [
-          #if authornames != "" {
-            set par(justify: false)
-            text(
-              font: heading-family,
-              size: 12pt,
-              fill: if branding { white } else { black },
-            )[#authornames]
-          }
+          // #if authornames != "" {
+          #set par(justify: false)
+          #text(
+            font: heading-family,
+            size: 12pt,
+            fill: if branding { white } else { black },
+          )[#authornames]
+          // }
         ], [
           #if date != none {
             text(
