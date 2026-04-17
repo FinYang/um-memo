@@ -3,7 +3,7 @@ title: Note to self
 author: First Last
 branding: true
 linestretch: 1.2
-format: um-memo-pdf # Use um-memo-pdf to use latex
+format: um-memo-typst # Use um-memo-pdf to use latex
 titlegraphic: bg-wide.jpg
 ---
 
