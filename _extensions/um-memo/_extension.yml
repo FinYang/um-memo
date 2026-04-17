@@ -20,8 +20,6 @@ contributes:
       - left=2cm
       - right=2cm
       block-headings: false
-      cite-method: biblatex
-      biblio-style: authoryear-comp
       template-partials:
         - before-title.tex
     typst:
@@ -35,7 +33,6 @@ contributes:
       region: AU
       paper: a4
       toc: false
-      bibliographystyle: apa
       margin:
         top: 2.7cm
         bottom: 2cm
